@@ -1,40 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# KeshavSoft - JAMstack Portfolio Website
 
-## Getting Started
+A modern, responsive business website built using the JAMstack architecture to showcase the services, journey, and team of **KeshavSoft**, a software solutions company. This project demonstrates best practices in performance, modular React components, static site generation, and seamless deployment.
 
-First, run the development server:
+## Project Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+The site includes:
+
+- A dynamic **Hero section** with responsive background images
+- Dedicated pages: `Home`, `About`, and `Contact`
+- Timeline and team showcase sections
+- Responsive client testimonials
+- Fully functional **Contact form** integrated with [Formspree](https://formspree.io)
+- Clean UI built with Bootstrap 5
+- JAMstack-compliant structure using **Next.js**
+
+## Technologies Used
+
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: Bootstrap 5, custom CSS
+- **Deployment**: Vercel
+- **Forms**: Formspree
+- **Font Icons**: Font Awesome
+
+## JAMstack Implementation
+
+This project follows the JAMstack principles:
+
+| Feature               | Implementation |
+|-----------------------|----------------|
+| **JavaScript**        | Interactive features and routing with Next.js and React |
+| **APIs**              | Contact form handled via Formspree API |
+| **Markup**            | Pre-rendered HTML via static site generation (SSG) using Next.js |
+
+- **No server-rendered pages**; all pages are statically generated for performance
+- Form submissions handled by a third-party API (Formspree), removing the need for a backend server
+- Deployed to Vercel for CDN-backed delivery and fast global performance
+
+## Features
+
+- Modular React components: `Navbar`, `Hero`, `Footer`, `Timeline`, `Team`, `CallToAction`
+- Shared `Hero` component supports variable height per page (e.g., 100vh on home, 80vh on about)
+- Testimonial section with dynamic star rendering
+- Contact form with validation and hover animation effects
+- Mobile-first, fully responsive layout
+- Minimal external dependencies, optimized for JAMstack deployment
+
+## Folder Structure
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+├── public/
+│ └── assets/ # Images used across the site
+├── components/
+│ ├── Navbar.js
+│ ├── Hero.js
+│ ├── Footer.js
+│ ├── Timeline.js
+│ ├── Team.js
+│ └── CallToAction.js
+├── pages/
+│ ├── index.js # Home page
+│ ├── about.js
+│ └── contact.js
+├── styles/
+│ └── globals.css # Global CSS + Bootstrap imports
+└── README.md
+```
