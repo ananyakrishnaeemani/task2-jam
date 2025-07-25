@@ -7,26 +7,26 @@ export default function Footer() {
             <h5 className="fw-bold mb-3">KeshavSoft</h5>
             <p>Crafting high-performance digital products with precision and care.</p>
             <div className="d-flex gap-3 mt-3">
-              <a href="#"><i className="fab fa-facebook-f text-white"></i></a>
-              <a href="#"><i className="fab fa-twitter text-white"></i></a>
-              <a href="#"><i className="fab fa-linkedin-in text-white"></i></a>
-              <a href="#"><i className="fab fa-instagram text-white"></i></a>
+              <Link href="#"><i className="fab fa-facebook-f text-white"></i></Link>
+              <Link href="#"><i className="fab fa-twitter text-white"></i></Link>
+              <Link href="#"><i className="fab fa-linkedin-in text-white"></i></Link>
+              <Link href="#"><i className="fab fa-instagram text-white"></i></Link>
             </div>
           </div>
           <div className="col-lg-2 col-md-6 mb-4">
             <h5 className="fw-bold mb-3">Quick Links</h5>
             <ul className="list-unstyled">
-              <li><a href="/" className="text-white">Home</a></li>
-              <li><a href="/about" className="text-white">About Us</a></li>
-              <li><a href="/contact" className="text-white">Contact</a></li>
+              <li><Link href="/" className="text-white">Home</Link></li>
+              <li><Link href="/about" className="text-white">About Us</Link></li>
+              <li><Link href="/contact" className="text-white">Contact</Link></li>
             </ul>
           </div>
           <div className="col-lg-3 col-md-6 mb-4">
             <h5 className="fw-bold mb-3">Services</h5>
             <ul className="list-unstyled">
-              <li><a href="#" className="text-white">Web Applications</a></li>
-              <li><a href="#" className="text-white">Mobile Solutions</a></li>
-              <li><a href="#" className="text-white">AI & Automation</a></li>
+              <li><Link href="#" className="text-white">Web Applications</Link></li>
+              <li><Link href="#" className="text-white">Mobile Solutions</Link></li>
+              <li><Link href="#" className="text-white">AI & Automation</Link></li>
             </ul>
           </div>
           <div className="col-lg-3 mb-4">

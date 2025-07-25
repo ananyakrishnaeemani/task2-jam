@@ -52,7 +52,7 @@ export default function HomePage() {
                   <div className="card-body">
                     <h5 className="card-title">{s.title}</h5>
                     <p className="card-text">{s.desc}</p>
-                    <a href="#" className="btn btn-sm btn-outline-primary">Learn More</a>
+                    <Link href="#" className="btn btn-sm btn-outline-primary">Learn More</Link>
                   </div>
                 </div>
               </div>
@@ -112,7 +112,7 @@ export default function HomePage() {
         <div className="container text-center">
           <h2 className="fw-bold mb-4">Ready to Transform Your Business?</h2>
           <p className="lead mb-4">Get started with our premium services today</p>
-          <a href="/contact" className="btn btn-light btn-lg px-5">Get in Touch</a>
+          <Link href="/contact" className="btn btn-light btn-lg px-5">Get in Touch</Link>
         </div>
       </section>
 

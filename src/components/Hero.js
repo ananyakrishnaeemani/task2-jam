@@ -17,8 +17,8 @@ export default function Hero({ title, subtitle, cta1, cta2, noButtons, minHeight
             <p className="lead">{subtitle}</p>
             {!noButtons && (
               <div className="mt-4">
-                <a href={cta1?.href} className="btn btn-primary btn-lg me-3">{cta1?.label}</a>
-                <a href={cta2?.href} className="btn btn-outline-light btn-lg">{cta2?.label}</a>
+                <Link href={cta1?.href} className="btn btn-primary btn-lg me-3">{cta1?.label}</Link>
+                <Link href={cta2?.href} className="btn btn-outline-light btn-lg">{cta2?.label}</Link>
               </div>
             )}
           </div>

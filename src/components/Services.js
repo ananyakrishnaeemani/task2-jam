@@ -32,7 +32,7 @@ export default function Services() {
                 <div className="card-body">
                   <h5 className="card-title">{s.title}</h5>
                   <p className="card-text">{s.desc}</p>
-                  <a href="#" className="btn btn-outline-primary btn-sm">Learn More</a>
+                  <Link href="#" className="btn btn-outline-primary btn-sm">Learn More</Link>
                 </div>
               </div>
             </div>
