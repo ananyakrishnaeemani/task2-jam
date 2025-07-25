@@ -1,42 +1,80 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+  --ks-primary: #0069D9;
+  --ks-accent: #20C997;
+  --ks-dark: #1F2937;
+  --ks-light: #F8FAFC;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #212529;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.about-hero,
+.contact-hero {
+  background: linear-gradient(120deg, var(--ks-primary), var(--ks-accent));
+  min-height: 80vh;
+  padding: 6rem 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.hero-section {
+  background: linear-gradient(90deg, var(--ks-primary), var(--ks-accent));
+  min-height: 100vh;
+  padding: 6rem 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.testimonial-img, .team-member {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.timeline {
+      position: relative;
+      padding-left: 50px;
+    }
+.timeline:before {
+      content: '';
+      position: absolute;
+      left: 20px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: #0d6efd;
+    }
+.timeline-item {
+      position: relative;
+      margin-bottom: 30px;
+    }
+.timeline-item:before {
+      content: '';
+      position: absolute;
+      left: -50px;
+      top: 5px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #0d6efd;
+      border: 4px solid white;
+}
+
+.contact-info-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
