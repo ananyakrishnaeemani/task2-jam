@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image';
 
 export default function Services() {
   const services = [
@@ -30,7 +31,7 @@ export default function Services() {
           {services.map((s, i) => (
             <div className="col-md-4" key={i}>
               <div className="card h-100 border-0 shadow-sm">
-                <img src={s.img} className="card-img-top" alt={s.title} />
+                <Image src={s.img} className="card-img-top" alt={s.title} width={100}height={100}/>
                 <div className="card-body">
                   <h5 className="card-title">{s.title}</h5>
                   <p className="card-text">{s.desc}</p>

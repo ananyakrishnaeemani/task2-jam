@@ -3,6 +3,8 @@ import Hero from '../components/Hero'
 import Footer from '../components/Footer'
 import Head from 'next/head';
 import Link from 'next/link'
+import Image from 'next/image';
+
 
 
 export default function HomePage() {
@@ -49,7 +51,7 @@ export default function HomePage() {
             ].map((s, idx) => (
               <div className="col-md-4" key={idx}>
                 <div className="card feature-card h-100 shadow-sm border-0">
-                  <img src={s.img} className="card-img-top" alt={s.title} />
+                  <Image src={s.img} className="card-img-top" alt={s.title} width={416} height={236}/>
                   <div className="card-body">
                     <h5 className="card-title">{s.title}</h5>
                     <p className="card-text">{s.desc}</p>
@@ -94,7 +96,7 @@ export default function HomePage() {
             ].map((t, idx) => (
               <div className="col-md-4" key={idx}>
                 <div className="card h-100 shadow-sm text-center p-4">
-                  <img src={t.img} className="rounded-circle testimonial-img mb-3" alt={t.name} />
+                  <Image src={t.img} className="rounded-circle testimonial-img mb-3" alt={t.name} width={100} height={100}/>
                   <h5 className="card-title">{t.name}</h5>
                   <p className="text-muted mb-2">{t.role}</p>
                   <p className="card-text">{t.text}</p>

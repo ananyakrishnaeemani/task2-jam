@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image';
 
 const members = [
   { name: 'Keshav', role: 'Founder & CEO', image: '/assets/1.jpg', desc: 'Tech visionary with a passion for building scalable products and mentoring young developers.' },
@@ -19,7 +20,7 @@ export default function Team() {
             <div className="col-md-4" key={i}>
               <div className="card border-0 shadow-sm h-100">
                 <div className="card-body text-center p-4">
-                  <img src={m.image} className="rounded-circle team-member mb-3" alt={m.name} />
+                  <Image src={m.image} className="rounded-circle team-member mb-3" alt={m.name} width={100}height={100}/>
                   <h5 className="card-title">{m.name}</h5>
                   <p className="text-primary mb-2">{m.role}</p>
                   <p className="card-text">{m.desc}</p>

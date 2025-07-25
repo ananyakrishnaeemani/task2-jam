@@ -6,6 +6,8 @@ import Team from '../components/Team'
 import CallToAction from '../components/CallToAction'
 import Head from 'next/head';
 import Link from 'next/link'
+import Image from 'next/image';
+
 
 
 
@@ -35,7 +37,7 @@ export default function AboutPage() {
               <p className="lead">We pride ourselves on clear communication, deep technical expertise, and long‑term collaboration with every client we serve.</p>
             </div>
             <div className="col-lg-6">
-              <img src="/assets/7.png" className="img-fluid rounded shadow" alt="Team collaboration" />
+              <Image src="/assets/7.png" className="img-fluid rounded shadow" alt="Team collaboration" width={636} height={410}/>
             </div>
           </div>
         </div>
