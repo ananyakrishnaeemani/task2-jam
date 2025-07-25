@@ -1,3 +1,4 @@
+import Link from 'next/link'
 export default function CallToAction() {
   return (
     <section className="py-5 bg-primary text-white">

@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
 import Head from 'next/head';
+import Link from 'next/link'
 
 
 export default function ContactPage() {

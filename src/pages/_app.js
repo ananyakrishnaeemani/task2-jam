@@ -2,6 +2,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import '../styles/globals.css';
 import { useEffect } from 'react';
+import Link from 'next/link'
+
 
 export default function App({ Component, pageProps }) {
   useEffect(() => {

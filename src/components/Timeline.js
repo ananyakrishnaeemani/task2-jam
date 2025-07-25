@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Timeline() {
   const events = [
     { year: '2017 - Founded', desc: 'KeshavSoft started as a 3-person team in a small coworking space in Bengaluru.' },

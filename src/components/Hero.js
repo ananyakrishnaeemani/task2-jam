@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Hero({ title, subtitle, cta1, cta2, noButtons, minHeight = '100vh' }) {
   return (
     <section

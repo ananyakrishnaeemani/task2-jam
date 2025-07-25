@@ -5,6 +5,8 @@ import Timeline from '../components/Timeline'
 import Team from '../components/Team'
 import CallToAction from '../components/CallToAction'
 import Head from 'next/head';
+import Link from 'next/link'
+
 
 
 export default function AboutPage() {

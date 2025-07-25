@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const members = [
   { name: 'Keshav', role: 'Founder & CEO', image: '/assets/1.jpg', desc: 'Tech visionary with a passion for building scalable products and mentoring young developers.' },
   { name: 'Moksh Verma', role: 'CTO', image: '/assets/2.jpg', desc: 'Leads our architecture and engineering teams with a focus on performance and clean code.' },
